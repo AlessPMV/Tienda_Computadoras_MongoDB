@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proveedores - Tienda de Computadoras</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tienda de Computadoras</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="proveedores.html">Proveedores</a></li>
+      <li><a href="ventas.html">Ventas</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Gestión de Proveedores</h2>
+    
+    <form id="proveedorForm">
+      <input type="hidden" id="proveedorId">
+      <input type="text" id="ruc" placeholder="RUC" required>
+      <input type="text" id="nombre" placeholder="Razón Social" required>
+      <input type="text" id="telefono" placeholder="Teléfono">
+      <input type="email" id="correo" placeholder="Correo">
+      <input type="text" id="direccion" placeholder="Dirección">
+      <button type="submit">Guardar</button>
+      <button type="button" onclick="limpiarFormulario()">Cancelar</button>
+    </form>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>RUC</th>
+          <th>Razón Social</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Dirección</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="proveedoresTable"></tbody>
+    </table>
+  </main>
+  
+  <footer>
+    <p>&copy; 2026 Tienda de Computadoras</p>
+  </footer>
+  
+  <script src="js/proveedores.js"></script>
+</body>
+</html>

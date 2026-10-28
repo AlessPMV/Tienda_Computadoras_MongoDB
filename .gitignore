@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+data/
+mongodb-data/
+dump/
+
+*.log
+
+.DS_Store
